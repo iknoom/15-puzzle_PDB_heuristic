@@ -50,7 +50,7 @@ class Solver():
         hq = [] # heap
 
         visited.add(str(init_state))
-        heappush(hq, (init_heur, init_step, init_state)) # 나중에 객체화해서 연산자 오버로딩
+        heappush(hq, (init_heur, init_step, init_state))
 
         while hq:
             cur_heur, cur_step, cur_state = heappop(hq)
